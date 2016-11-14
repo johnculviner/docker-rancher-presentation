@@ -1,0 +1,29 @@
+- name: "Install docker on digital ocean"
+  hosts: "all"
+  sudo: true
+  tasks:
+    - name: make sure python is installed, required by ansible
+      raw: apt-get update && apt-get install python -y
+
+    - name: docker is installed
+      apt: name=docker.io
+
+    - name: pip is installed to install docker-py
+      apt: name=python-pip
+
+    - name: docker-py is installed for managing docker containers with pip
+      pip: name=docker-py version=1.9.0
+
+
+- name: "Rancher server is running"
+  hosts: "docker0"
+  tasks:
+    - name: make sure rancher server is started
+      docker_container:
+        name: rancher-server
+        image: rancher/server
+        state: started
+        detach: true
+        restart_policy: always
+        ports:
+         - "8080:8080"
