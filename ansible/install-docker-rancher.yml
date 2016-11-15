@@ -1,3 +1,9 @@
+#run the playbook:
+#ansible-playbook install-docker-rancher.yml
+
+#see the status with this:
+#ansible all -u root -a "docker ps"
+
 - name: "Install docker on digital ocean"
   hosts: "all"
   sudo: true
