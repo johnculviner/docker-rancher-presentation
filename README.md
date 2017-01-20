@@ -15,6 +15,7 @@
 export DIGITALOCEAN_TOKEN="ABDC123..."
 ```
 - Install terraform
+- Make sure you have a `~/.ssh/id_rsa`. If you don't run `ssh-keygen` with default options from `~/.ssh/`
 - To create your VMs, from `./terraform` run
 ```
 terraform apply
