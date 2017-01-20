@@ -2,8 +2,10 @@
 
 # Description
 - Aids in setup of Docker + Rancher on Digital Ocean with Terraform.
-- Also contains [nodejs-echo-hostname](https://hub.docker.com/r/johnculviner/nodejs-echo-hostname/)
-which helps illustrate how the rancher load balancer works
+- Also contains a variety of different language API examples that demonstrate how the Rancher/HAProxy load balancer works:
+  - [nodejs-echo-hostname](https://hub.docker.com/r/johnculviner/nodejs-echo-hostname/)
+  - [dotnetcore-echo-hostname](https://hub.docker.com/r/johnculviner/dotnetcore-echo-hostname/)
+
 
 # Setup
 - [Create](https://cloud.digitalocean.com/registrations/new) a DigitalOcean account
