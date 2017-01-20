@@ -24,7 +24,7 @@ terraform apply
 - Install ansible
 - From `./ansible` run
 ```
-ansible-playbook install-docker-rancher
+ansible-playbook install-docker-rancher.yml
 ```
 
 - Visit http://IP_OF_YOUR_DOCKER_0_BOX:8080/
