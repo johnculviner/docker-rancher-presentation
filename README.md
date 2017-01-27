@@ -1,5 +1,7 @@
 # Intro to Docker and clustering with Rancher from scratch
 
+Slides: http://www.slideshare.net/JohnCulviner/intro-to-docker-and-clustering-with-rancher-from-scratch
+
 # Description
 - Aids in setup of Docker + Rancher on Digital Ocean with Terraform.
 - Also contains a variety of different language API examples that demonstrate how the Rancher/HAProxy load balancer works:
